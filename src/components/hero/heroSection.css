@@ -1,0 +1,30 @@
+.typewriter h1 {
+	display: inline-block;
+	overflow: hidden;
+	border-right: 2px solid black; /* blinking cursor */
+	animation: typing 6s linear forwards, blink 0.7s step-end infinite;
+
+	/* let it wrap naturally */
+	white-space: normal;
+	/* word-break: break-word; */
+
+	/* for smooth animation */
+	max-width: 0;
+}
+
+/* typing reveal */
+@keyframes typing {
+	from {
+		max-width: 0;
+	}
+	to {
+		max-width: 100%;
+	}
+}
+
+/* cursor blink */
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
+}
